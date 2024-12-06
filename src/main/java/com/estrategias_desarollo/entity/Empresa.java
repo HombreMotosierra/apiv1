@@ -11,6 +11,15 @@ import lombok.Data;
 @Table(name = "empresa")
 public class Empresa {
 
+    public Empresa(String nit, String nombre, Integer estado) {
+        this.nit = nit;
+        this.nombre = nombre;
+        this.estado = estado;
+    }
+
+    public Empresa() {
+    }
+
     @Id
     @Column(name = "nit")
     private String nit;
